@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import RequestNavbar from "../../components/Navbars/RequestNavbar";
-import GroupRequestsNavbar from "../../components/Navbars/GroupRequestsNavbar";
+import RTopNavbar from "../../components/Navbars/RTopNavbar";
+
 
 const StudentConnect = () => {
   return (
     <>
-      <GroupRequestsNavbar />
+      <RTopNavbar />
       <div className="flex min-h-screen bg-[#f8f9fb]">
         {/* Sidebar */}
         <RequestNavbar />

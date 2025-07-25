@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function GroupRequestsNavbar2() {
+export default function RTopNavbar2() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (

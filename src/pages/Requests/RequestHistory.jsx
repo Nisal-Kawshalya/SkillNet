@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import GroupRequestsNavbar from "../../components/Navbars/GroupRequestsNavbar";
+import RTopNavbar from "../../components/Navbars/RTopNavbar";
 
 const requests = [
   {
@@ -84,7 +84,8 @@ export default function RequestHistory() {
   const [search, setSearch] = useState("");
   return (
     <>
-      <GroupRequestsNavbar />
+      
+      <RTopNavbar />
       <div className="min-h-screen bg-gray-50 flex flex-col">
         {/* Top Navbar */}
         

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import GroupRequestsNavbar from "../../components/Navbars/GroupRequestsNavbar";
 import RequestNavbar from "../../components/Navbars/RequestNavbar";
+import RTopNavbar from "../../components/Navbars/RTopNavbar";
 
 
 const requests = [
@@ -62,18 +62,12 @@ const featured = [
 const GroupRequests = () => {
   return (
     <>
-      <GroupRequestsNavbar />
+    {/* Top Nav */}
+      <RTopNavbar />
       <div className="min-h-screen bg-[#f8f9fb] flex">
-        {/* Sidebar */}
-        <RequestNavbar />
-
-
         {/* Main Content */}
         <main className="flex-1 p-8">
-          {/* Top Nav */}
           
-
-
           {/* Title & Stats */}
           <h1 className="text-2xl font-bold mb-6">Group Requests</h1>
           <div className="flex gap-6 mb-8">

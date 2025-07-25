@@ -19,7 +19,7 @@ import OnlineMeeting from "./pages/Teach&learn/OnlineMeeting";
 import JoinGroup from "./pages/Group/JoinGroup";
 import GroupChat from "./pages/Group/GroupChat";
 import NewUserHomePage from "./pages/Homepages/NewUserHomePage";
-
+import CreateGroupRequest from "./pages/Group/CreateGroupRequest";
 
 function App() {
   return (
@@ -53,6 +53,7 @@ function App() {
       <Route path="/JoinGroup" element={<JoinGroup />} />
       <Route path="/GroupChat" element={<GroupChat />} />
       <Route path="/NewUserHomePage" element={<NewUserHomePage />} />
+      <Route path="/CreateGroupRequest" element={<CreateGroupRequest />} />
     </Routes>
   );
 }

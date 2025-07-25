@@ -45,20 +45,10 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 text-gray-700 font-medium w-full items-center">
             <li><Link to="/" className="hover:text-indigo-600 w-full block text-center" onClick={() => setMenuOpen(false)}>Home</Link></li>
             <li><a href="/StudentConnect" className="hover:text-indigo-600 w-full block text-center">Request</a></li>
-            <li><a href="#" className="hover:text-indigo-600 w-full block text-center">Connections</a></li>
             <li><a href="/GroupChat" className="hover:text-indigo-600 w-full block text-center">Groups</a></li>
              <li><a href="/SelectTeacher" className="hover:text-indigo-600">Teach & Learn</a></li>
-            <li><a href="#" className="hover:text-indigo-600 w-full block text-center">Messages</a></li>
             <li><a href="#" className="hover:text-indigo-600 w-full block text-center">Settings</a></li>
           </ul>
-          <div className="flex flex-col gap-2 mt-4 w-4/5">
-            <Link to="/login" onClick={() => setMenuOpen(false)}>
-              <button className="w-full px-4 py-2 border border-indigo-600 text-indigo-600 rounded hover:bg-indigo-50 font-semibold">Login</button>
-            </Link>
-            <Link to="/signup" onClick={() => setMenuOpen(false)}>
-              <button className="w-full px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 font-semibold">Sign Up</button>
-            </Link>
-          </div>
         </div>
       )}
     </nav>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import GroupRequestsNavbar from "../../components/Navbars/GroupRequestsNavbar";
 import RequestNavbar from "../../components/Navbars/RequestNavbar";
+import RTopNavbar from '../../components/Navbars/RTopNavbar';
 
 const requests = [
   {
@@ -68,14 +68,15 @@ const OneToOneRequests = () => {
 
   return (
     <>
-      <GroupRequestsNavbar />
+      {/* Top Nav */}
+      <RTopNavbar />
       <div className="min-h-screen bg-[#f8f9fb] flex">
         {/* Sidebar */}
         <RequestNavbar />
 
         {/* Main Content */}
         <main className="flex-1 p-8">
-          {/* Top Nav */}
+         
           
 
           <div className="flex gap-6">

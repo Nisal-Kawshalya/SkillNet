@@ -48,8 +48,8 @@ export default function Settings() {
           </Link>
         </div>
         <ul className="flex gap-6 text-gray-700 font-medium">
-          <li><Link to="#" className="hover:text-indigo-600">Home</Link></li>
-          <li><Link to="#" className="hover:text-indigo-600">Dashboard</Link></li>
+          <li><Link to="/" className="hover:text-indigo-600">Home</Link></li>
+          <li><Link to="/" className="hover:text-indigo-600">Dashboard</Link></li>
           <li><Link to="#" className="text-indigo-600 font-semibold">Settings</Link></li>
         </ul>
         <div className="flex items-center gap-4">

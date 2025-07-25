@@ -1,19 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import RequestNavbar from "../../components/Navbars/RequestNavbar";
-import RTopNavbar3 from "../../components/Navbars/RTopNavbar3";
 
 
-export default function CreateRequest() {
+
+export default function CreateGroupRequest() {
   return (
     <>
           {/* Top Navbar */}
-      <RTopNavbar3 />
+      
       <div className="min-h-screen bg-gray-50 flex flex-col">
         <div className="flex flex-1">
-          {/* Sidebar */}
-          <RequestNavbar />
-          
           {/* Main Content */}
           <main className="flex-1 flex gap-8 p-8">
             {/* Left: Form */}
@@ -81,16 +77,18 @@ export default function CreateRequest() {
               </div>
               {/* Action Buttons */}
               <div className="flex gap-2 justify-end mt-2">
+                <Link to="/GroupChat">
                 <button className="border rounded px-4 py-2 font-semibold hover:bg-gray-100">Cancel</button>
+                </Link>
                 <button className="bg-blue-600 text-white rounded px-4 py-2 font-semibold hover:bg-blue-700">Confirm Request</button>
               </div>
-            </section>
+              </section>
             {/* Right: Summary & Tips */}
             <aside className="w-96 flex flex-col gap-6">
               <div className="bg-white rounded-xl shadow p-6 mb-2">
                 <h3 className="font-semibold mb-2">Request Summary</h3>
                 <div className="text-sm mb-2"><span className="font-semibold">Topic:</span> Untitled Request</div>
-                <div className="text-sm mb-2"><span className="font-semibold">Type:</span> <span className="inline-block bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded text-xs ml-1">1 to 1 Request</span></div>
+                <div className="text-sm mb-2"><span className="font-semibold">Type:</span> <span className="inline-block bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded text-xs ml-1">Group Request</span></div>
                 <div className="text-sm mb-2"><span className="font-semibold">Date:</span> June 11th, 2025</div>
                 <div className="text-sm mb-2"><span className="font-semibold">Time:</span> 10:00 AM</div>
                 <div className="text-sm mb-2"><span className="font-semibold">Payment:</span> No Payment Required</div>
